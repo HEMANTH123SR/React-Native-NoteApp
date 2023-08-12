@@ -1,5 +1,4 @@
 import React from "react";
-import { StyleSheet } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../screens/Home";
 import Write from "../screens/Write";
@@ -29,7 +28,7 @@ const TabContainer = () => {
           marginTop: iconMargin,
         };
 
-        if (route.name === "Note") {
+        if (route.name === "Notes") {
           return (
             <FontAwesome name="sticky-note" size={iconSize} color={color}
             style={iconStyle}
@@ -55,7 +54,7 @@ const TabContainer = () => {
     
     >
       <Tab.Screen
-        name="Note"
+        name="Notes"
         component={Home}
         // options={{
         //   tabBarIcon: () => (
